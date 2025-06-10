@@ -64,6 +64,7 @@ namespace PropExample32
             Change(test);   // 레퍼런스를 넘김에 주의
             Console.WriteLine(test.value);
 
+            // 참조 복사 예제 하나 더
             Test testA = new Test();
             Test testB = testA;
             testA.value = 10;
@@ -72,8 +73,10 @@ namespace PropExample32
 
             // 피보나치 재귀 함수
             Fibonacci fibo = new Fibonacci();
-            Console.WriteLine(fibo.Get(1));
-            Console.WriteLine(fibo.Get(10));
+            //Console.WriteLine(Fibonacci.Get(1));
+            //Console.WriteLine(Fibonacci.Get(20));
+            Console.WriteLine(Fibonacci.GetM(1));
+            Console.WriteLine(Fibonacci.GetM(20));
         }
         class Test
         {
